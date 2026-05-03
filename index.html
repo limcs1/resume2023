@@ -5,46 +5,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        body{
-            margin: 0;
-            padding: 0 .9% 2% .9%;
-            line-height: 1.2;
-            text-align: justify;
-        }
+    body{
+        margin: 0;
+        padding: 0 .9% 2% .9%;
+        line-height: 1.2;
+        text-align: justify;
+    }
 
-        p, h1, h2, h3, h4{
-            margin-bottom: 0;
-            margin: 0;
-            padding: 0;
-        }
+    p, h1, h2, h3, h4{
+        margin-bottom: 0;
+        margin: 0;
+        padding: 0;
+    }
 
-        h3{
-            text-decoration: underline;
-        }
+    h3{
+        text-decoration: underline;
+    }
 
-        .skills ul{
-            list-style-type: disc;
-            -webkit-columns: 2;
-            columns: 2;
-        }
+    .skills ul{
+        list-style-type: disc;
+        -webkit-columns: 2;
+        columns: 2;
+    }
 
-        /* .basics h1, h2, .basics p{
-            text-align: center;
-        } */
+    .basics{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 30px;
+    }
 
-        span{
-            float: right;
-        }
-    </style>
+    .basics-text{
+        flex: 1;
+    }
+
+    .profile-pic{
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 2px solid #ccc;
+    }
+
+    span{
+        float: right;
+    }
+</style>
 </head>
 <body>
-    <div class="basics">
+    <!-- <div class="basics">
         <h1>Lim Chen Seong</h1>
         <p>Bachelor Degree in Computer Sciences with HONS</p>
-<!--         <a href="tel:+60162101181"><p>(+60)16-2101181</p></a>
-        <a href="mailto:1998limderick@gmail.com"><p>1998limderick@gmail.com</p></a> -->
+        <p>Jobs preference: Cybersecurity / Networking & Server Infrastructures</p>
+    </div> -->
+    <div class="basics">
+    <div class="basics-text">
+        <h1>Lim Chen Seong</h1>
+        <p>Bachelor Degree in Computer Sciences with HONS</p>
         <p>Jobs preference: Cybersecurity / Networking & Server Infrastructures</p>
     </div>
+
+    <img src="WhatsApp Image 2026-05-04 at 00.59.54.jpeg" 
+         alt="Profile Picture" 
+         class="profile-pic">
+</div>
     <div class="summary">
         <h3>Summary</h3>
         <p>Motivated IT professional with experience in networking and cybersecurity support. Skilled in troubleshooting, system maintenance, and technical problem-solving. Eager to continuously develop technical expertise and contribute to organizational success.</p>
